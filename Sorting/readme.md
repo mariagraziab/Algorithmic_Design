@@ -1,4 +1,4 @@
-#Sorting Homework 
+# Sorting Homework 
 
 * the floder Sorting_Algorithm contains the implementations of the homework of 31/30/2020 and 2/4/2020 
 
