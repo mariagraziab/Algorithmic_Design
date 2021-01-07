@@ -8,20 +8,16 @@
 /** @struct binheap_type
  *  @brief A class to represent binary heaps.
  *
- *  This class is mean to represent binary heaps.
+ *  
  */
 typedef struct {
-    void *A; //this is the array used to store heap nodes 
-    unsigned int num_of_elem; //number of nodes in the heap 
-    unsigned int max_size; //maximum number of nodes 
-    //i.e size of A
-    size_t key_size; //size of the key type 
-    total_order_type leq; //heap total order
-    void *max_order_value; //maximum value stored in the heap 
-    //even if this value is no more in the heap, but for sure 
-    //any value in the heap is smaller than it 
-    //this is usefull when we insert a new value in the heap , in order 
-    //to not insert infinite 
+    void *A; 
+    unsigned int num_of_elem; 
+    unsigned int max_size; 
+    size_t key_size; 
+    total_order_type leq; 
+    void *max_order_value; 
+    
 
 } binheap_type;
 
@@ -80,9 +76,7 @@ const void *extract_min(binheap_type *H);
  * @param max_size is the maximum number of nodes in the heap (i.e., 
  *                 the size of A). 
  * @param key_size is the size in bytes of the values stored in A.
- *       because we don't know the type of the elements of the array
- * so I need to know the size of the elements 
- * in fact I have a pointer to void 
+ *      
  * @param leq is the total order characterizing the heap.
  * @return a pointer to the new binary heap.
  **********************************************************************/

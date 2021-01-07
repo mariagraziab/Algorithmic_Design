@@ -122,8 +122,8 @@ delete_matrix(matrix,n);
 double tvector = 0; 
 double theap = 0; 
 FILE *file1, *file2; 
-file1=fopen("HeapData2.txt", "wt");
-file2 =fopen("ArrayData2.txt","wt");
+file1=fopen("HeapData.txt", "wt");
+file2 =fopen("ArrayData.txt","wt");
 
 for(n = 500; n<=10000; n+=500)
 {   int** m = allocate_matrix(n);

@@ -10,6 +10,5 @@ void random_matrix(int** M,size_t n);
 
 void delete_matrix(int** M,size_t n); 
 
-void random_sparse_matrix(int** M,size_t n); 
 
 #endif 
