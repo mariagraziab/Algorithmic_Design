@@ -49,11 +49,12 @@ int main()
    print_heap(&h, int_printer);
 
   *b = 3; 
-  insert_value(&h,b);
+  insert_value(&h,(void*)b);
   printf("Insert value %d\n",*b);
    print_heap(&h, int_printer);
-    *b= 7;
-  decrease_key(&h,7,(void*)b); 
+    *b= 0;
+    printf("decrease to zero key of node 9\n"); 
+  decrease_key(&h,9,(void*)b); 
   print_heap(&h, int_printer);
    free(a); 
     delete_heap(&h); 

@@ -163,11 +163,12 @@ void insert_value(heap* h, void* value)
 
      void *t= h->data + (h->size)*h->data_size;
       memcpy(t, ins, h->data_size);
-      
-
-      decrease_key(h,h->size,value);
-      h->size++; 
+       h->size++; 
       h->capacity--;
+
+      decrease_key(h,h->size-1,value);
+     // h->size++; 
+     // h->capacity--;
       return; 
 
 
