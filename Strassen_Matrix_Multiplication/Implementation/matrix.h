@@ -18,11 +18,14 @@ float **allocate_zero_matrix(const size_t rows, const size_t cols);
 
 
 float **allocate_random_matrix(const size_t rows, const size_t cols);
-#endif //__MATRIX__
 
 
 
 void rectangular_matrix_multiplication(float **C,float **AR, float **BR, float const *const *const A,
                                 float const *const *const B,
                                 const size_t n1, const size_t n, const size_t n2,const size_t nn) ;
+
+
+
+#endif //__MATRIX__
 

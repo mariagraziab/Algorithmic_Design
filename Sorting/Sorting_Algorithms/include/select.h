@@ -50,5 +50,12 @@ void quick_sort_select(void *A, const unsigned int n,
                        const size_t elem_size, 
                        total_order_type leq);
 
-void quick_sort_aux(void *A,int begin, int end, const size_t elem_size,total_order_type leq);
+void three_partition(void *A, unsigned int begin, 
+                     unsigned int end,unsigned int pivot, 
+                     const size_t elem_size, total_order_type leq, 
+                     int* a);
+
+ void quick_sort_select(void *A, const unsigned int n, 
+                       const size_t elem_size, 
+                       total_order_type leq);                   
 #endif // __SELECT__
